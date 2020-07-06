@@ -9,6 +9,8 @@ $ java DBClient
 ```
 The server can accept multiple clients and handle sudden client disconnection. Once the server is running, you can enter SQL queries in the client.
 
+[Example queries can be found here.](example-queries.txt)
+
 ## SQL Syntax
 BNF grammar for accepted SQL queries:
 ```
