@@ -1,6 +1,6 @@
 Basic/core set of test queries with expected responses
 
-// If the user doesn’t know a value or doesn’t wish to provide it, they must pass an empty String (i.e. there is no null)
+// If the user doesnâ€™t know a value or doesnâ€™t wish to provide it, they must pass an empty String (i.e. there is no null)
 // However (as you will see from the below) we will not test for this situation.
 // StringLiteral, TableName, ColumnName, DatabaseName are all alphanumeric sequences (i.e. a-z, A-Z, 0-9)
 // StringLiterals may optionally include spaces but definitely not UTF character encodings !
@@ -27,7 +27,7 @@ OK
 INSERT INTO marks VALUES ('Clive', 20, false);
 OK
 
-// Perform various test queries on the table…
+// Perform various test queries on the tableâ€¦
 SELECT * FROM marks;
 id	name	mark	pass
 1	Steve	65	    true
@@ -115,8 +115,8 @@ INSERT INTO roles VALUES ('Elinor', 3, 4);
 Advanced set of test queries with expected responses
 
 // ALTER, JOIN and compound WHERE statements are considered advanced features and so are tested in this section
-//    >    <     >=    <=    LIKE  are also considered advanced functionality and so are tested in this section
-// For simplicity   >    <     >=    <=    only work with numerical data (when used, attempt to interpret data as numerical)
+// Â Â  >Â Â   <Â Â Â Â  >=Â Â Â  <=Â Â Â  LIKEÂ  are also considered advanced functionality and so are tested in this section
+// For simplicity   >Â Â   <Â Â Â Â  >=Â Â Â  <=Â Â Â  only work with numerical data (when used, attempt to interpret data as numerical)
 // We recommend you use Float.parseFloat(String s) to convert Strings to numbers for these comparisons
 
 SELECT * FROM actors WHERE awards < 5;
@@ -213,8 +213,8 @@ ERROR: Unknown database
 
 Robustness testing queries (note: imdb database is recreated afresh before running these)
 
-// These check for a range of query errors – it is essential that the server does not crash when encountering these
-// All error messages are purely for the benefit of the user – please choose a suitably helpful message
+// These check for a range of query errors â€“ it is essential that the server does not crash when encountering these
+// All error messages are purely for the benefit of the user â€“ please choose a suitably helpful message
 // Testing will only check to make sure that the ERROR keyword has been returned
 
 // Missing semi-colon
