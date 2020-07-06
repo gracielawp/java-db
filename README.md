@@ -2,7 +2,7 @@
 Homebrew Java-based database system that accepts SQL queries. This system stores data in .csv format for readability. No external libraries were used to create this system.
 
 ## Usage
-Clone this repository and run these commands from the out/productio/Database folder on two different terminals:
+Clone this repository and run these commands from the out/production/Database folder on two different terminals:
 ```
 $ java DBServer
 $ java DBClient
